@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <form name="frmComment" id="frmComment" (ngSubmit)="search()" class="form">
     <div class="form-group">
-      <label for="txtComment">Query</label>
+      <label class="bold" for="txtComment">Query</label>
       <input
         [(ngModel)]="query"
         type="text"
@@ -12,7 +12,7 @@
     </div>
     <br />
     <div class="form-group">
-      <label for="txtCommentHere">Message</label>
+      <label class="bold" for="txtCommentHere">Message</label>
       <textarea
         name="message"
         [(ngModel)]="message"
