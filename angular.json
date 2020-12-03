@@ -120,5 +120,8 @@
       }
     }
   },
-  "defaultProject": "simpleApp"
+  "defaultProject": "simpleApp",
+  "cli": {
+    "analytics": false
+  }
 }

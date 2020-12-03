@@ -1,0 +1,28 @@
+<div class="card mt-5" style="width: 40rem">
+  <div class="card-header" style="font-weight: bold">Results</div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item">
+      <label style="font-weight: bold">Palindromes:</label>
+      <div *ngIf="palindromes != 0">
+        <div *ngFor="let data of palindromes">
+          {{ data }}
+        </div>
+      </div>
+      <div class="text-danger" *ngIf="palindromes == 0">
+        No Palindromes in the message
+      </div>
+    </li>
+    <li class="list-group-item">
+      Count occurrences of the query string in the message:
+      {{ originalOccurance }}
+    </li>
+    <li class="list-group-item">
+      Count occurrences query string in the message in reverse:
+      {{ reversedOccurance }}
+    </li>
+  </ul>
+</div>
+
+<button class="btn btn-primary mt-3" style="width: 10rem" (click)="goToHome()">
+  Back
+</button>

@@ -1,0 +1,35 @@
+<div class="container mt-5">
+  <form name="frmComment" id="frmComment" (ngSubmit)="search()" class="form">
+    <div class="form-group">
+      <label for="txtComment">Query</label>
+      <input
+        [(ngModel)]="query"
+        type="text"
+        name="query"
+        class="form-control"
+        placeholder="Enter a String"
+      />
+    </div>
+    <br />
+    <div class="form-group">
+      <label for="txtCommentHere">Message</label>
+      <textarea
+        name="message"
+        [(ngModel)]="message"
+        id="txtCommentHere"
+        class="form-control"
+        rows="3"
+      >
+      </textarea>
+    </div>
+
+    <button
+      type="submit"
+      style="float: right"
+      class="btn btn-primary mt-4"
+      value="Search"
+    >
+      Search
+    </button>
+  </form>
+</div>
